@@ -25,7 +25,7 @@ const htmlPluginEntries = templateFiles.map(
       hash: false,
       filename: template.output,
       template: path.resolve(config.paths.source, template.input),
-      minify: false
+      minify: false,
     })
 );
 
@@ -67,6 +67,22 @@ module.exports = {
         generator: {
           filename: "fonts/[name].[hash:6][ext]",
         },
+      },
+      {
+        test: /\.html$/i,
+        use: [
+          "html-loader",
+          {
+            loader: "posthtml-loader",
+            options: {
+              plugins: [
+                require("posthtml-include")({
+                  root: path.resolve(config.paths.source),
+                }),
+              ],
+            },
+          },
+        ],
       },
     ],
   },
