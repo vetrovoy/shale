@@ -1,48 +1,37 @@
 .button {
   cursor: pointer;
-  text-transform: uppercase;
-  padding: 12px 32px;
-  font-size: 12px;
+  padding: 15px 38px;
+
+  color: $color-primary;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
-  letter-spacing: 1px;
+  font-weight: 600;
+  line-height: 135%;
+  letter-spacing: 0.27px;
+  border-radius: 54px;
+
   text-align: center;
-  background-color: $color-white;
-  border: 1px solid $color-secondary;
-  color: $color-secondary;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
 
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 1px $color-white;
+  background-color: $color-accent-primary;
+  border: none;
+
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  &:hover, &.active {
+    background-color: $color-accent-primary-light;
   }
 
-  &:active {
-    transform: scale(0.99);
+  &--sm {
+    padding: 10px 38px;
   }
 
-  &--secondary {
-    background-color: $color-secondary;
-    border: 1px solid $color-secondary;
-    color: $color-white;
+  &--light {
+    background-color: $color-light;
+    font-weight: 400;
   }
 
-  &--accent {
-    background-color: $color-accent;
-    border: 1px solid $color-accent;
-    color: $color-white;
-  }
-
-  &--white {
-    background-color: $color-white;
-    border: 1px solid $color-white;
-    color: $color-accent;
-  }
-
-  &--transparent {
-    background-color: transparent;
-    border: 1px solid $color-white;
-    color: $color-white;
+  @media (max-width: 768px) {
+    font-size: 16px;
   }
 }

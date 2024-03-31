@@ -5,17 +5,29 @@
 /* Base */
 @import "base/normalize.css";
 @import "base/fonts.css";
+@import "base/base.css";
 @import "base/typography.css";
 @import "base/utilities.css";
 /* /Base */
 
 /* Components */
+@import "components/burger.css";
 @import "components/button.css";
 @import "components/form.css";
 @import "components/containers.css";
+@import "components/case.css";
 /* /Components */
 
 /* Layout */
 @import "layout/header.css";
 @import "layout/footer.css";
+@import "layout/hero.css";
+@import "layout/advantages.css";
+@import "layout/stages.css";
+@import "layout/section-list.css";
+@import "layout/form-order.css";
+@import "layout/form-callback.css";
+@import "layout/documents.css";
+@import "layout/work.css";
+@import "layout/contacts.css";
 /* /Layout */

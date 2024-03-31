@@ -1,3 +1,23 @@
 .footer {
-  
+  & a {
+    color: $color-primary;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  &__container {
+    padding: 30px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @media (max-width: 768px) {
+      padding: 30px 0px;
+      & .logo {
+        margin-left: auto;
+        margin-top: 60px;
+      }
+    }
+  }
 }

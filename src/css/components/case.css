@@ -1,0 +1,21 @@
+.case {
+  border-radius: 47px;
+  background: $color-light;
+  overflow: hidden;
+
+  &--md {
+    border-radius: 34.299px;
+  }
+
+  &--sm {
+    border-radius: 25px;
+  }
+
+  &--gradient {
+    background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+  }
+
+  &--dark {
+    background: #898989;
+  }
+}

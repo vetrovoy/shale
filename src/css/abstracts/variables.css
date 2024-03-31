@@ -1,13 +1,24 @@
 :root {
-  --color-primary: #151515;
-  --color-secondary: #00b5e2;
-  --color-accent: #003c71;
-  --color-white: #ffffff;
-  --color-white-secondary: #F4F4F4;
+  --color-accent-primary: #ff7a00;
+  --color-accent-primary-light: #ffb46f;
+  --color-accent-secondary: #33b5ef;
+  --color-accent-secondary-light: #97dfff;
+  --color-primary: #1c1d1c;
+  --color-secondary: #1c1d1ca6;
+  --color-stroke: #c4c8cc;
+  --color-light: #ffffff;
+  --color-dark: #1e1e1e;
+
+  --font-primary: Inter, sans-serif;
 }
 
+$color-accent-primary: var(--color-accent-primary);
+$color-accent-primary-light: var(--color-accent-primary-light);
+$color-accent-secondary: var(--color-accent-secondary);
+$color-accent-secondary-light: var(--color-accent-secondary-light);
 $color-primary: var(--color-primary);
 $color-secondary: var(--color-secondary);
-$color-accent: var(--color-accent);
-$color-white: var(--color-white);
-$color-white-secondary: var(--color-white-secondary);
+$color-stroke: var(--color-stroke);
+$color-light: var(--color-light);
+$color-dark: var(--color-dark);
+$font-primary: var(--font-primary);

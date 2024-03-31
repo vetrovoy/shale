@@ -1,0 +1,41 @@
+.stages {
+  & .col-md-6 {
+    @media (max-width: 1200px) {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &-case {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 40px;
+
+    &__num {
+      min-width: 74px;
+      max-width: 74px;
+      min-height: 74px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      align-self: center;
+
+      margin-bottom: 50px;
+
+      color: $color-light;
+      font-family: Heebo, sans-serif;
+      font-size: 48.1px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 135%;
+      letter-spacing: 0.722px;
+      border-radius: 100%;
+      background-color: $color-accent-secondary;
+    }
+  }
+}

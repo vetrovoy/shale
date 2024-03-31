@@ -1,23 +1,37 @@
-.form {
-  display: flex;
-  width: 100%;
+input {
+  border-radius: 54px;
+  border: 1px solid $color-dark;
+  background-color: $color-light;
+  color: $color-primary;
+  padding: 15px 38px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%;
+  letter-spacing: 0.24px;
+  outline: none;
 
-  &-control {
-    all: unset;
-    border-radius: 2px;
-    background-color: transparent;
-    padding-bottom: 9px;
-    padding-right: ;
-    color: $color-white;
-    border-bottom: 1px solid $color-white;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%;
-    flex-basis: 100%;
-
-    &::placeholder {
-      color: $color-white;
-    }
+  &:focus {
+    border: 1px solid $color-accent-primary;
   }
+}
+
+.form-check-input[type="checkbox"] {
+  border-radius: 100%;
+  border: 1px solid $color-dark;
+  width: 1.4em;
+  height: 1.4em;
+  margin-left: -1.9em;
+}
+
+.form-check {
+  display: block;
+  min-height: 1.9rem;
+  padding-left: 1.9em;
+  margin-bottom: 0;
+}
+
+.form-check-input:checked {
+  background-color: $color-accent-primary;
+  border-color: $color-accent-primary;
 }

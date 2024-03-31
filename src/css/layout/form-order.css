@@ -1,0 +1,26 @@
+.form-order {
+  padding: 57px 85px;
+
+  @media (max-width: 768px) {
+    padding: 69px 29px;
+
+    & .title {
+      text-align: left;
+    }
+  }
+
+  & .form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px 72px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      & input {
+        width: 100%;
+      }
+    }
+  }
+}

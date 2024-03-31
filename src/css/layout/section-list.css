@@ -1,0 +1,38 @@
+.section-list {
+  & .case {
+    background-color: transparent;
+    margin-bottom: 20px;
+  }
+
+  &-item {
+    position: relative;
+    height: 334px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+    padding: 30px 40px;
+
+    &:hover .section-list-item__bg {
+      scale: 1.1;
+    }
+
+    &__bg {
+      transition: scale 0.3s ease-in-out;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    &__title {
+      color: $color-light;
+      margin-bottom: 20px;
+      max-width: 241px;
+    }
+  }
+}

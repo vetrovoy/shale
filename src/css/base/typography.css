@@ -1,66 +1,109 @@
-body {
-  font-family: "Muller";
-}
-
 a {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.24px;
+
   text-decoration: none;
-  color: $color-primary;
+  color: $color-accent-primary;
   transition: color 0.2s ease-in-out;
 
   &:hover {
-    color: $color-secondary;
+    color: $color-accent-primary-light;
   }
 }
 
-p {
-  color: #151515;
-  font-size: 18px;
+p,
+.paragraph {
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 25px;
-  margin-top: 0;
-  margin-bottom: 20px;
+  line-height: 150%;
+  letter-spacing: 0.24px;
+  margin-top: 0px;
+
+  &--md {
+    font-size: 18px;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  & span {
+    color: $color-accent-primary;
+  }
+}
+
+small {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.21px;
 }
 
 ul {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
   padding-left: 1.3em;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 li {
-  color: #151515;
-  font-family: Muller;
-  font-size: 18px;
+  font-size: 16px;
+  font-style: normal;
   font-weight: 400;
-  line-height: 1;
+  line-height: 150%;
+  letter-spacing: 0.24px;
 
   &::marker {
-    color: $color-accent;
+    color: $color-accent-primary;
     font-size: 1.3em;
   }
 }
 
 .title {
-  font-size: 46px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 120%;
-  margin-top: 0;
-  margin-bottom: 40px;
+  font-weight: 600;
+  line-height: 135%;
+  letter-spacing: 0.66px;
+
+  margin-top: 0px;
 
   &--1 {
-    font-size: 52px;
+    font-size: 44px;
+
+    @media (max-width: 768px) {
+      font-size: 26px;
+    }
   }
 
   &--2 {
-    font-size: 46px;
+    font-size: 28px;
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
   }
 
   &--3 {
-    font-size: 40px;
+    font-size: 24px;
+
+    @media (max-width: 768px) {
+      font-size: 22px;
+    }
+  }
+
+  & span {
+    color: $color-accent-primary;
+  }
+}
+
+.heading {
+  margin-bottom: 50px;
+
+  @media (max-width: 768px) {
+    text-align: center;
+    margin-bottom: 45px;
   }
 }
